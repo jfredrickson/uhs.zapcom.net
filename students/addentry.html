@@ -1,0 +1,95 @@
+<!DOCTYPE HTML PUBLIC "-//Netscape Comm. Corp.//DTD HTML//EN">
+<HTML>
+<HEAD>
+<TITLE>Ukiah High School - Student Registration</TITLE>
+</HEAD>
+<BODY BGCOLOR="#EEEEEE" BACKGROUND="../images/d_bg.jpg">
+<TABLE WIDTH="100%" BORDER=0>
+<TR>
+<TD>
+<IMG SRC="../images/t/students.gif" ALT="[Students]" BORDER=0>
+</TD>
+<TD ALIGN=right>
+<IMG SRC="../images/map.gif" USEMAP="#map1" BORDER=0 ALT="[Imagemap]">
+<MAP NAME="map1">
+<AREA SHAPE="rect" COORDS="2,1,30,30" HREF="../">
+<AREA SHAPE="rect" COORDS="31,1,63,30" HREF="../search.html">
+<AREA SHAPE="rect" COORDS="64,1,87,30" HREF="../help.html">
+</MAP>
+</TR>
+</TABLE>
+<BR>
+<CENTER><FONT SIZE="+2">Student Registration</FONT></CENTER>
+<BLOCKQUOTE>
+
+<P>To be added to the Ukiahi student page, please fill out this form.</P>
+
+<P>If you don't have an e-mail address or a homepage, just leave them blank.  Anything
+ you type in the "Comments" area will be put next to your entry on the students' page,
+ so you can use it as a quick description of who you are.  In the "Password" box, type
+ any password you want.  This will be used so that in the future, if you would like to
+ update your info on the page, we can confirm that it is you.  <I>Do not use the same
+ password you use for your Internet account!</I>
+
+<P>Note that the only required fields are your name, year graduating, and password.</P>
+
+<P>If you would like to update your entry, then just fill out this form (don't forget
+ your password, you need it for validation!) and your entry will be updated.</P>
+
+<P>After you submit this form, it might take a day or two for your listing to show up.
+ If your submission still hasn't appeared in a week, <A HREF="mailto:webmaster@uhs.ml.org">
+ e-mail us</A> and let us know.
+
+<FORM METHOD=POST ACTION="/~willm/uhs/cgi-bin/regform.cgi">
+
+<INPUT TYPE=hidden NAME="recipient" VALUE="webmaster@uhs.ml.org">
+<INPUT TYPE=hidden NAME="subject" VALUE="Student submission">
+<INPUT TYPE=hidden NAME="redirect" VALUE="http://www.uhs.zapcom.net/students/submitted.html">
+<INPUT TYPE=hidden NAME="required" VALUE="realname,year,password">
+<INPUT TYPE=hidden NAME="env_report" VALUE="REMOTE_USER,REMOTE_HOST,HTTP_USER_AGENT">
+<INPUT TYPE=hidden NAME="sort" VALUE="order:realname,year,email,homepage,comments,password">
+<INPUT TYPE=hidden NAME="print_blank_fields" VALUE="1">
+<INPUT TYPE=hidden NAME="missing_fields_redirect" VALUE="http://www.uhs.zapcom.net/students/formerror.html">
+
+<TABLE BORDER=0 CELLPADDING=5>
+<TR>
+<TD ALIGN=right>Name: </TD>
+<TD><INPUT TYPE=text NAME="realname" SIZE=40></TD>
+</TR>
+<TR>
+<TD ALIGN=right>Year graduating: </TD>
+<TD><INPUT TYPE=text NAME="year" SIZE=40></TD>
+</TR>
+<TR>
+<TD ALIGN=right>E-mail address: </TD>
+<TD><INPUT TYPE=text NAME="email" SIZE=40></TD>
+</TR>
+<TR>
+<TD ALIGN=right>Homepage: </TD>
+<TD><INPUT TYPE=text NAME="homepage" SIZE=40></TD>
+</TR>
+<TR>
+<TD ALIGN=right VALIGN=top>Comments: </TD>
+<TD><TEXTAREA NAME="comments" COLS=40 ROWS=10></TEXTAREA></TD>
+</TR>
+<TR>
+<TD ALIGN=right VALIGN=top>Password: </TD>
+<TD><INPUT TYPE=text NAME="password" SIZE=40></TD>
+</TR>
+<TR><TD></TD><TD><INPUT TYPE=submit VALUE="Submit your info"> &nbsp;&nbsp;&nbsp; <INPUT TYPE=reset VALUE="Reset the form"></TD></TR>
+</TABLE>
+</FORM>
+
+<BR>
+</BLOCKQUOTE>
+<BR>
+<HR>
+<TABLE WIDTH="100%">
+<TR>
+<TD><A HREF="pages.html"><IMG SRC="../images/back.gif" ALT="<-" BORDER=0></A> <A HREF="pages.html">Back to the main Students' page</A></TD>
+<TD ALIGN=right><A HREF="../"><IMG SRC="../images/back.gif" ALT="<-" BORDER=0></A> <A HREF="../">Back to the UHS page</A></TD>
+</TR>
+</TABLE>
+<BR>
+</BODY>
+</HTML>

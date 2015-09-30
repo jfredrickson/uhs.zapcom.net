@@ -1,0 +1,70 @@
+<!DOCTYPE HTML PUBLIC "-//Netscape Comm. Corp.//DTD HTML//EN">
+<HTML>
+<HEAD>
+<TITLE>Ukiah High School - Search</TITLE>
+</HEAD>
+<BODY BGCOLOR="#EEEEEE" BACKGROUND="images/d_bg.jpg">
+<TABLE WIDTH="100%" BORDER=0>
+<TR>
+<TD>
+<IMG SRC="images/t/search.gif" ALT="[Search]" BORDER=0>
+</TD>
+<TD ALIGN=right>
+<IMG SRC="images/map.gif" USEMAP="#map1" BORDER=0 ALT="[Imagemap]">
+<MAP NAME="map1">
+<AREA SHAPE="rect" COORDS="2,1,30,30" HREF="./">
+<AREA SHAPE="rect" COORDS="31,1,63,30" HREF="search.html">
+<AREA SHAPE="rect" COORDS="64,1,87,30" HREF="help.html">
+</MAP>
+</TR>
+</TABLE>
+<BR>
+<BLOCKQUOTE>
+<P><B>Search the UHS Website</B></P>
+<P>By typing in words and/or phrases to search for, you can find what you need on the UHS Website without having to go through every single page.  You can also take a look at the <A HREF="site-index.html">UHS Site Index</A> for a complete list of all available pages.</P>
+<CENTER>
+<FORM METHOD=POST ACTION="/~willm/uhs/cgi-bin/search.cgi">
+<TABLE BORDER=0>
+<TR>
+<TH>Text to Search For: </TH>
+<TH><INPUT TYPE=text NAME="terms" SIZE=40><BR></TH>
+</TR>
+<TR>
+<TH>
+Boolean: <SELECT NAME="boolean">
+<OPTION>AND
+<OPTION>OR
+</SELECT>
+</TH>
+<TH>
+Case <SELECT NAME="case">
+<OPTION>Insensitive
+<OPTION>Sensitive
+</SELECT>
+<BR>
+</TH>
+</TR>
+<TR>
+<TH COLSPAN=2>
+<INPUT TYPE=submit VALUE="Search!"> <INPUT TYPE=reset><BR>
+</TH>
+</TR>
+</TABLE>
+</FORM>
+</CENTER>
+<P><B>Examples</B></P>
+<P>If you wanted to search for all pages containing either the word "student" <I>or</I> the word "teacher", you would select OR as a boolean, and type the words:</P>
+<P ALIGN=center>
+<TT>student teacher</TT>
+</P>
+<P>If you wanted to search for pages containing the words "computer" <I>and</I> "internet" <I>and</I> "software", you would select AND as a boolean, and type the words:</P>
+<P ALIGN=center>
+<TT>computer internet software</TT>
+</P>
+<P>This search CGI is from <A HREF="http://www.worldwidemart.com/scripts/">Matt's Script Archive</A>, and has been slightly modified.</P>
+</BLOCKQUOTE>
+<HR>
+<A HREF="./"><IMG SRC="images/back.gif" ALT="<-" BORDER=0></A> <A HREF="./">Back to the UHS page</A>
+<BR>
+</BODY>
+</HTML>
